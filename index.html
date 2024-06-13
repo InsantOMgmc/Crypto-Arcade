@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Базовая сборка</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+</head>
+
+<body>
+    <header class="header">
+    <div class="container">
+        <div class="header__inner fade-down">
+
+            <a href="#logo" class="logo">
+                Crypto Arcade
+            </a>
+
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            <svg width="32" height="32" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M40.634 8.31127C37.5747 6.90751 34.294 5.87327 30.8638 5.28093C30.8013 5.2695 30.7389 5.29806 30.7067 5.3552C30.2848 6.10563 29.8175 7.08463 29.4902 7.85412C25.8008 7.30178 22.1304 7.30178 18.5166 7.85412C18.1893 7.06753 17.705 6.10563 17.2811 5.3552C17.249 5.29997 17.1866 5.2714 17.1241 5.28093C13.6958 5.87138 10.4151 6.90561 7.35387 8.31127C7.32737 8.32269 7.30465 8.34176 7.28958 8.3665C1.06678 17.6632 -0.6379 26.7314 0.19836 35.6872C0.202144 35.731 0.22674 35.7729 0.260796 35.7996C4.36642 38.8147 8.34341 40.6451 12.2466 41.8583C12.309 41.8774 12.3752 41.8546 12.415 41.8031C13.3383 40.5423 14.1613 39.2128 14.867 37.8147C14.9086 37.7328 14.8688 37.6357 14.7837 37.6033C13.4783 37.1081 12.2352 36.5043 11.0395 35.8187C10.9449 35.7634 10.9373 35.6281 11.0243 35.5634C11.2759 35.3748 11.5276 35.1786 11.7679 34.9805C11.8114 34.9444 11.872 34.9367 11.9231 34.9596C19.7786 38.5461 28.2831 38.5461 36.0459 34.9596C36.097 34.9348 36.1576 34.9425 36.203 34.9787C36.4433 35.1767 36.6949 35.3748 36.9484 35.5634C37.0354 35.6281 37.0298 35.7634 36.9352 35.8187C35.7394 36.5176 34.4964 37.1081 33.189 37.6014C33.1039 37.6338 33.0661 37.7328 33.1077 37.8147C33.8285 39.2108 34.6515 40.5403 35.5578 41.8012C35.5956 41.8546 35.6637 41.8774 35.7262 41.8583C39.6483 40.6451 43.6252 38.8147 47.7309 35.7996C47.7668 35.7729 47.7895 35.7329 47.7933 35.6891C48.7942 25.3352 46.117 16.3414 40.6964 8.3684C40.6832 8.34176 40.6605 8.32269 40.634 8.31127ZM16.04 30.2341C13.675 30.2341 11.7263 28.0628 11.7263 25.3962C11.7263 22.7297 13.6372 20.5584 16.04 20.5584C18.4617 20.5584 20.3916 22.7487 20.3538 25.3962C20.3538 28.0628 18.4428 30.2341 16.04 30.2341ZM31.9895 30.2341C29.6245 30.2341 27.6758 28.0628 27.6758 25.3962C27.6758 22.7297 29.5867 20.5584 31.9895 20.5584C34.4113 20.5584 36.3411 22.7487 36.3033 25.3962C36.3033 28.0628 34.4113 30.2341 31.9895 30.2341Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            <svg width="32" height="32" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_318_75)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24ZM24.8601 17.7179C22.5257 18.6888 17.8603 20.6984 10.8638 23.7466C9.72766 24.1984 9.13251 24.6404 9.07834 25.0726C8.98677 25.803 9.90142 26.0906 11.1469 26.4822C11.3164 26.5355 11.4919 26.5907 11.6719 26.6492C12.8973 27.0475 14.5457 27.5135 15.4026 27.5321C16.1799 27.5489 17.0475 27.2284 18.0053 26.5707C24.5423 22.158 27.9168 19.9276 28.1286 19.8795C28.2781 19.8456 28.4852 19.803 28.6255 19.9277C28.7659 20.0524 28.7521 20.2886 28.7372 20.352C28.6466 20.7383 25.0562 24.0762 23.1982 25.8036C22.619 26.3421 22.2081 26.724 22.1242 26.8113C21.936 27.0067 21.7443 27.1915 21.56 27.3692C20.4215 28.4667 19.5678 29.2896 21.6072 30.6336C22.5873 31.2794 23.3715 31.8135 24.1539 32.3463C25.0084 32.9282 25.8606 33.5085 26.9632 34.2313C27.2442 34.4155 27.5125 34.6068 27.7738 34.7931C28.7681 35.5019 29.6615 36.1388 30.7652 36.0373C31.4065 35.9782 32.0689 35.3752 32.4053 33.5767C33.2004 29.3263 34.7633 20.1169 35.1244 16.3219C35.1561 15.9895 35.1163 15.5639 35.0843 15.3771C35.0523 15.1904 34.9855 14.9242 34.7427 14.7272C34.4552 14.4939 34.0113 14.4447 33.8127 14.4482C32.91 14.4641 31.5251 14.9456 24.8601 17.7179Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_318_75">
+                                        <rect width="48" height="48" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            <svg width="32" height="32" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M36.6526 3.8078H43.3995L28.6594 20.6548L46 43.5797H32.4225L21.7881 29.6759L9.61989 43.5797H2.86886L18.6349 25.56L2 3.8078H15.9222L25.5348 16.5165L36.6526 3.8078ZM34.2846 39.5414H38.0232L13.8908 7.63406H9.87892L34.2846 39.5414Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="burger">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+</header>
+    <main class="wrapper">
+        <section class="hero" id="hero">
+    <div class="hero__bg">
+
+        <div class="container">
+            <div class="hero__title-blog fade-up">
+                <h1 class="hero__title">Crypto Arcade - Играйте и Побеждайте в Мире Крипты!</h1>
+                <a href="#" class="hero__btn">Join to project</a>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="rail">
+    <div class="rail__item rail__item--top">
+        <div class="rail__slide">
+            <picture><source srcset="img/rail1/binance.svg" type="image/webp"><img src="img/rail1/binance.svg" alt="binance" class="rail__img" id="image"></picture>
+            <picture><source srcset="img/rail1/bitcoin.svg" type="image/webp"><img src="img/rail1/bitcoin.svg" alt="bitcoin" class="rail__img"></picture>
+            <picture><source srcset="img/rail1/doge.svg" type="image/webp"><img src="img/rail1/doge.svg" alt="doge" class="rail__img"></picture>
+            <picture><source srcset="img/rail1/ethereum.svg" type="image/webp"><img src="img/rail1/ethereum.svg" alt="ethereum" class="rail__img"></picture>
+            <picture><source srcset="img/rail1/polkadot.svg" type="image/webp"><img src="img/rail1/polkadot.svg" alt="polkadot" class="rail__img"></picture>
+            <picture><source srcset="img/rail1/tether.svg" type="image/webp"><img src="img/rail1/tether.svg" alt="tether" class="rail__img"></picture>
+            <picture><source srcset="img/rail1/hnt.svg" type="image/webp"><img src="img/rail1/hnt.svg" alt="hnt" class="rail__img"></picture>
+            <picture><source srcset="img/rail1/vgx.svg" type="image/webp"><img src="img/rail1/vgx.svg" alt="vgx" class="rail__img"></picture>
+            <picture><source srcset="img/rail1/ht.svg" type="image/webp"><img src="img/rail1/ht.svg" alt="ht" class="rail__img"></picture>
+        </div>
+        <div class="rail__slide">
+            <picture><source srcset="img/rail1/binance.svg" type="image/webp"><img src="img/rail1/binance.svg" alt="binance" class="rail__img"></picture>
+            <picture><source srcset="img/rail1/bitcoin.svg" type="image/webp"><img src="img/rail1/bitcoin.svg" alt="bitcoin" class="rail__img"></picture>
+            <picture><source srcset="img/rail1/doge.svg" type="image/webp"><img src="img/rail1/doge.svg" alt="doge" class="rail__img"></picture>
+            <picture><source srcset="img/rail1/ethereum.svg" type="image/webp"><img src="img/rail1/ethereum.svg" alt="ethereum" class="rail__img"></picture>
+            <picture><source srcset="img/rail1/polkadot.svg" type="image/webp"><img src="img/rail1/polkadot.svg" alt="polkadot" class="rail__img"></picture>
+            <picture><source srcset="img/rail1/tether.svg" type="image/webp"><img src="img/rail1/tether.svg" alt="tether" class="rail__img"></picture>
+            <picture><source srcset="img/rail1/hnt.svg" type="image/webp"><img src="img/rail1/hnt.svg" alt="hnt" class="rail__img"></picture>
+            <picture><source srcset="img/rail1/vgx.svg" type="image/webp"><img src="img/rail1/vgx.svg" alt="vgx" class="rail__img"></picture>
+            <picture><source srcset="img/rail1/ht.svg" type="image/webp"><img src="img/rail1/ht.svg" alt="ht" class="rail__img"></picture>
+        </div>
+    </div>
+    <div class="retro-arcade-container container">
+        <picture><source srcset="img/retor-arc.webp" type="image/webp"><img src="img/retor-arc.jpg" alt="retro-arcade" class="retro-arcade-img wow fade-up" data-wow-offset="150"></picture>
+        <div class="retro-arcade-text-container section__title-blog wow fade-up" data-wow-offset="150">
+            <h2 class=" retro-arcade-title section__title"><span>1.</span> Play and Earn: Discover Our Crypto Gaming
+            Platform </h2>
+            <p class="retro-arcade-text section__text">Our project is an innovative platform that combines online games
+                and
+                cryptocurrency. We offer users a unique opportunity to play various games and earn tokens with real
+                value. Our mission is to create a new economic model that rewards both players and developers, making
+                the gaming process fair and profitable for all participants.
+            </p>
+        </div>
+    </div>
+    <div class="rail__item rail__item--bottom">
+        <div class="rail__slide rail__slide--reverse">
+            <picture><source srcset="img/rail2/algorand.svg" type="image/webp"><img src="img/rail2/algorand.svg" alt="algorand" class="rail__img"></picture>
+            <picture><source srcset="img/rail2/bat.svg" type="image/webp"><img src="img/rail2/bat.svg" alt="algorand" class="rail__img"></picture>
+            <picture><source srcset="img/rail2/bitcoin.svg" type="image/webp"><img src="img/rail2/bitcoin.svg" alt="algorand" class="rail__img"></picture>
+            <picture><source srcset="img/rail2/cosmos.svg" type="image/webp"><img src="img/rail2/cosmos.svg" alt="algorand" class="rail__img"></picture>
+            <picture><source srcset="img/rail2/maker.svg" type="image/webp"><img src="img/rail2/maker.svg" alt="algorand" class="rail__img"></picture>
+            <picture><source srcset="img/rail2/mana.svg" type="image/webp"><img src="img/rail2/mana.svg" alt="algorand" class="rail__img"></picture>
+            <picture><source srcset="img/rail2/tomo.svg" type="image/webp"><img src="img/rail2/tomo.svg" alt="algorand" class="rail__img "></picture>
+            <picture><source srcset="img/rail2/fun.svg" type="image/webp"><img src="img/rail2/fun.svg" alt="algorand" class="rail__img"></picture>
+            <picture><source srcset="img/rail2/cru.svg" type="image/webp"><img src="img/rail2/cru.svg" alt="algorand" class="rail__img"></picture>
+        </div>
+        <div class="rail__slide rail__slide--reverse">
+            <picture><source srcset="img/rail2/algorand.svg" type="image/webp"><img src="img/rail2/algorand.svg" alt="algorand" class="rail__img"></picture>
+            <picture><source srcset="img/rail2/bat.svg" type="image/webp"><img src="img/rail2/bat.svg" alt="algorand" class="rail__img"></picture>
+            <picture><source srcset="img/rail2/bitcoin.svg" type="image/webp"><img src="img/rail2/bitcoin.svg" alt="algorand" class="rail__img"></picture>
+            <picture><source srcset="img/rail2/cosmos.svg" type="image/webp"><img src="img/rail2/cosmos.svg" alt="algorand" class="rail__img"></picture>
+            <picture><source srcset="img/rail2/maker.svg" type="image/webp"><img src="img/rail2/maker.svg" alt="algorand" class="rail__img"></picture>
+            <picture><source srcset="img/rail2/mana.svg" type="image/webp"><img src="img/rail2/mana.svg" alt="algorand" class="rail__img"></picture>
+            <picture><source srcset="img/rail2/tomo.svg" type="image/webp"><img src="img/rail2/tomo.svg" alt="algorand" class="rail__img"></picture>
+            <picture><source srcset="img/rail2/fun.svg" type="image/webp"><img src="img/rail2/fun.svg" alt="algorand" class="rail__img"></picture>
+            <picture><source srcset="img/rail2/cru.svg" type="image/webp"><img src="img/rail2/cru.svg" alt="algorand" class="rail__img"></picture>
+        </div>
+    </div>
+</section>
+        <section class="play-and-earn">
+    <div class="container play-and-earn__container">
+        <div class="play-and-earn__text-container section__title-blog">
+            <h2 class="play-and-earn__title section__title wow fade-up" data-wow-offset="150"><span>2. </span>Why Traditional Games Fall Short: The
+                Solution is Here!
+            </h2>
+            <p class="play-and-earn__text section__text wow fade-up" data-wow-offset="150">Modern online games often have unfair monetization models that
+                don’t allow players to gain real value from their time and efforts. There is also a lack of trust
+                between players and developers, and independent developers have limited opportunities to realize their
+                ideas.
+                <br> <br>
+                We offer a platform where players can play various games and earn tokens with real value. Developers get
+                access to our resources and tools to create and publish their games, earning a share of the revenue
+                generated by their projects.
+
+            </p>
+        </div>
+        <picture><source srcset="img/play-and-earn/bg.webp" type="image/webp"><img src="img/play-and-earn/bg.jpg" alt="bg" class="play-and-earn__img wow fade-up" data-wow-offset="150"></picture>
+    </div>
+</section>
+        <section class="games-crypto">
+    <picture><source srcset="img/decor/circles.svg" type="image/webp"><img src="img/decor/circles.svg" alt="circles" class="games-crypto__circles"></picture>
+    <div class="container games-crypto__container">
+        <picture><source srcset="img/games-crypto/bg.webp" type="image/webp"><img src="img/games-crypto/bg.jpg" alt="bg" class="games-crypto__img wow fade-up" data-wow-offset="150"></picture>
+        <div class="section__title-blog games-crypto__title-blog">
+            <h2 class="section__title wow fade-up" data-wow-offset="150"><span>3.</span> Games and Cryptocurrency: A New
+                Era of Online Entertainment
+            </h2>
+            <p class="section__text wow fade-up" data-wow-offset="150">
+                Our platform will feature various flash-style games integrated with our cryptocurrency. Users can earn
+                tokens by playing games and achieving success.
+                <br><br>
+                We will provide developers with access to our resources and tools for creating games on the Unity
+                engine. Developers can upload their games to our platform, where they will be reviewed for quality and
+                standards compliance before being published.
+
+            </p>
+        </div>
+    </div>
+</section>
+        <section class="tokenomics section">
+    <div class="container tokenomics__container">
+        <div class="section__title-blog tokenomics__title-blog">
+            <h2 class="section__title wow fade-up" data-wow-offset="150"><span>4.</span> Tokenomics: Earn Real Value for
+                Gaming Achievements
+            </h2>
+            <p class="section__text wow fade-up" data-wow-offset="150">
+                Our token will be used within the platform as a means of exchange and value storage. It will be used to
+                pay for access to games, purchase in-game items and upgrades, and reward players and developers.
+                <br><br>
+                Player Rewards: Players will earn tokens for their achievements, successes, and participation in
+                contests. This will incentivize active participation and bring real value to their efforts.
+                <br><br>
+                Developer Rewards: Game developers will earn a percentage of the revenue generated by their games. This
+                will encourage the creation of high-quality and innovative games on our platform.
+
+            </p>
+        </div>
+
+        <picture><source srcset="img/tokenomics/bg.webp" type="image/webp"><img src="img/tokenomics/bg.png" alt="bg" class="tokenomics__img wow fade-up" data-wow-offset="150"></picture>
+    </div>
+</section>
+        <section class="main-info">
+    <div class="main-info__container">
+        <div class="main-info__item main-info__item--first">
+            <p class="section__title wow fade-up" data-wow-offset="150"><span>5.</span> Our Path to Success: Strategies
+                and Future Plans</p>
+            <p class="section__text wow fade-up" data-wow-offset="150">We will develop a comprehensive marketing
+                strategy, including targeted advertising,
+                influencer collaborations, events and contests, and active promotion on social media.
+                Our development plan includes expanding the game library, improving the platform and developer tools,
+                and attracting more players and developers. We also plan to establish partnerships with key gaming
+                companies.
+            </p>
+        </div>
+        <picture><source srcset="img/main-info/main-bg.webp" type="image/webp"><img src="img/main-info/main-bg.jpg" alt="bitcoin" class="main-info__img wow fade-down" data-wow-offset="150"></picture>
+        <div class="main-info__item main-info__item--second">
+            <p class="section__title wow fade-up" data-wow-offset="150"><span>6.</span> Risks and Limitations: How We
+                Overcome Them</p>
+            <p class="section__text wow fade-up" data-wow-offset="150">We identify potential risks such as data
+                security, cryptocurrency regulation
+                changes, and competition. We will develop appropriate strategies and measures to manage these risks.
+                We recognize that we may face limitations such as limited cryptocurrency adoption and regulatory
+                barriers. We will work within these constraints and strive to overcome them.
+            </p>
+        </div>
+        <div class="main-info__item main-info__item--third">
+            <p class="section__title wow fade-up" data-wow-offset="150"><span>7.</span> Together Towards Success: Join
+                the New Gaming Revolution
+            </p>
+            <p class="section__text wow fade-up" data-wow-offset="150">Our project is an innovative platform that
+                combines games and cryptocurrency,
+                offering users the opportunity to earn real value by playing games. We believe our platform will become
+                a significant player in the online gaming industry, bringing satisfaction to both users and developers.
+            </p>
+        </div>
+    </div>
+</section>
+        <section class="tokenomics-detail">
+    <picture><source srcset="img/decor/looper.svg" type="image/webp"><img src="img/decor/looper.svg" alt="looper" class="tokenomics-detail__looper"></picture>
+    <div class="container tokenomics-detail__container">
+        <picture>
+            <source srcset="img/tokenomics-detail/bg-mobile.webp" media="(max-width: 768px)">
+            <img src="img/tokenomics-detail/bg.jpg" alt="bitcoin" class="tokenomics-detail__img wow fade-up"
+                data-wow-offset="150">
+        </picture>
+
+        <div class="section__title-blog tokenomics-detail__title-blog">
+            <h2 class="section__title wow fade-up" data-wow-offset="150"><span>8.</span>Tokenomics in Detail: Rewards for Players and Developers</h2>
+            <div class="tokenomics-detail__item">
+
+                <p class="section__text tokenomics-detail__text tokenomics-detail__text--first wow fade-up" data-wow-offset="150">
+                    <span>Token Distribution</span>
+                    <br><br>
+                    - Developers: Funding platform development and incentivizing new games. <br>
+                    - Project Initiators and Early Investors: Rewarding initial participants and providing early-stage
+                    financial support.<br>
+                    - Bonuses and Reward Programs: Encouraging player activity and attracting new users.<br>
+                    - Reserve Fund: For future project needs, including development and marketing.<br>
+                    - Game Developer Rewards: Rewarding for successful user acquisition and retention, and quality
+                    projects.<br>
+                    - Marketing and Partnerships: Attracting partners and conducting marketing activities.<br>
+                    - Token Distribution Among Current Users: Rewarding activity and achievements.<br>
+                    - Game Accelerator: Investing in promising projects on the platform.<br>
+                    - Partnership Rewards: Rewarding partners for integrating their solutions and attracting new
+                    users.<br>
+                    - Liquidity and Exchange Operations: Allocating tokens to ensure liquidity and exchange operations
+                    on<br>
+                    external crypto exchanges, enabling users to freely buy and sell tokens and expand their use within
+                    and
+                    outside the platform.<br> <br>
+                </p>
+                <p class="section__text tokenomics-detail__text tokenomics-detail__text--second wow fade-up" data-wow-offset="150">
+                    <span>Loyalty Program for Players and Developers</span>
+                    <br><br>
+                    - Token Distribution for Players:<br>
+                    - For completing tasks and achievements in games.<br>
+                    - For inviting new users to the platform.<br>
+                    - For participating in events and tournaments.<br>
+                    - For providing feedback and participating in beta testing.<br>
+                    - For community activity.<br>
+                    <br><br>
+                    - Token Distribution for Developers:<br>
+                    - For creating new games.<br>
+                    - For popularizing games and attracting users.<br>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+    <footer>
+    <div class="footer__bg">
+        <div class="container">
+            <div class="footer__inner">
+
+                <a href="#logo" class="logo">
+                    Crypto Arcade
+                </a>
+
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">
+                                <svg width="32" height="32" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M40.634 8.31127C37.5747 6.90751 34.294 5.87327 30.8638 5.28093C30.8013 5.2695 30.7389 5.29806 30.7067 5.3552C30.2848 6.10563 29.8175 7.08463 29.4902 7.85412C25.8008 7.30178 22.1304 7.30178 18.5166 7.85412C18.1893 7.06753 17.705 6.10563 17.2811 5.3552C17.249 5.29997 17.1866 5.2714 17.1241 5.28093C13.6958 5.87138 10.4151 6.90561 7.35387 8.31127C7.32737 8.32269 7.30465 8.34176 7.28958 8.3665C1.06678 17.6632 -0.6379 26.7314 0.19836 35.6872C0.202144 35.731 0.22674 35.7729 0.260796 35.7996C4.36642 38.8147 8.34341 40.6451 12.2466 41.8583C12.309 41.8774 12.3752 41.8546 12.415 41.8031C13.3383 40.5423 14.1613 39.2128 14.867 37.8147C14.9086 37.7328 14.8688 37.6357 14.7837 37.6033C13.4783 37.1081 12.2352 36.5043 11.0395 35.8187C10.9449 35.7634 10.9373 35.6281 11.0243 35.5634C11.2759 35.3748 11.5276 35.1786 11.7679 34.9805C11.8114 34.9444 11.872 34.9367 11.9231 34.9596C19.7786 38.5461 28.2831 38.5461 36.0459 34.9596C36.097 34.9348 36.1576 34.9425 36.203 34.9787C36.4433 35.1767 36.6949 35.3748 36.9484 35.5634C37.0354 35.6281 37.0298 35.7634 36.9352 35.8187C35.7394 36.5176 34.4964 37.1081 33.189 37.6014C33.1039 37.6338 33.0661 37.7328 33.1077 37.8147C33.8285 39.2108 34.6515 40.5403 35.5578 41.8012C35.5956 41.8546 35.6637 41.8774 35.7262 41.8583C39.6483 40.6451 43.6252 38.8147 47.7309 35.7996C47.7668 35.7729 47.7895 35.7329 47.7933 35.6891C48.7942 25.3352 46.117 16.3414 40.6964 8.3684C40.6832 8.34176 40.6605 8.32269 40.634 8.31127ZM16.04 30.2341C13.675 30.2341 11.7263 28.0628 11.7263 25.3962C11.7263 22.7297 13.6372 20.5584 16.04 20.5584C18.4617 20.5584 20.3916 22.7487 20.3538 25.3962C20.3538 28.0628 18.4428 30.2341 16.04 30.2341ZM31.9895 30.2341C29.6245 30.2341 27.6758 28.0628 27.6758 25.3962C27.6758 22.7297 29.5867 20.5584 31.9895 20.5584C34.4113 20.5584 36.3411 22.7487 36.3033 25.3962C36.3033 28.0628 34.4113 30.2341 31.9895 30.2341Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">
+                                <svg width="32" height="32" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_318_75)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24ZM24.8601 17.7179C22.5257 18.6888 17.8603 20.6984 10.8638 23.7466C9.72766 24.1984 9.13251 24.6404 9.07834 25.0726C8.98677 25.803 9.90142 26.0906 11.1469 26.4822C11.3164 26.5355 11.4919 26.5907 11.6719 26.6492C12.8973 27.0475 14.5457 27.5135 15.4026 27.5321C16.1799 27.5489 17.0475 27.2284 18.0053 26.5707C24.5423 22.158 27.9168 19.9276 28.1286 19.8795C28.2781 19.8456 28.4852 19.803 28.6255 19.9277C28.7659 20.0524 28.7521 20.2886 28.7372 20.352C28.6466 20.7383 25.0562 24.0762 23.1982 25.8036C22.619 26.3421 22.2081 26.724 22.1242 26.8113C21.936 27.0067 21.7443 27.1915 21.56 27.3692C20.4215 28.4667 19.5678 29.2896 21.6072 30.6336C22.5873 31.2794 23.3715 31.8135 24.1539 32.3463C25.0084 32.9282 25.8606 33.5085 26.9632 34.2313C27.2442 34.4155 27.5125 34.6068 27.7738 34.7931C28.7681 35.5019 29.6615 36.1388 30.7652 36.0373C31.4065 35.9782 32.0689 35.3752 32.4053 33.5767C33.2004 29.3263 34.7633 20.1169 35.1244 16.3219C35.1561 15.9895 35.1163 15.5639 35.0843 15.3771C35.0523 15.1904 34.9855 14.9242 34.7427 14.7272C34.4552 14.4939 34.0113 14.4447 33.8127 14.4482C32.91 14.4641 31.5251 14.9456 24.8601 17.7179Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_318_75">
+                                            <rect width="48" height="48" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">
+                                <svg width="32" height="32" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M36.6526 3.8078H43.3995L28.6594 20.6548L46 43.5797H32.4225L21.7881 29.6759L9.61989 43.5797H2.86886L18.6349 25.56L2 3.8078H15.9222L25.5348 16.5165L36.6526 3.8078ZM34.2846 39.5414H38.0232L13.8908 7.63406H9.87892L34.2846 39.5414Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
